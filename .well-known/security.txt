@@ -1,0 +1,5 @@
+Contact: https://github.com/MerryBestTrading/Merry_5.1/security/advisories/new
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, de
+Canonical: https://merrybesttrading.github.io/Merry_5.1/.well-known/security.txt
+Policy: https://merrybesttrading.github.io/Merry_5.1/security.html

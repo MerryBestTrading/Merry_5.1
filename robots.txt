@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://merrybesttrading.github.io/Merry_5.1/sitemap.xml
