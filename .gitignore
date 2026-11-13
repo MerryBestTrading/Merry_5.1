@@ -1,0 +1,14 @@
+# Large distribution files belong in GitHub Releases, not in git.
+# GitHub blocks normal git files over 100 MiB, so keep archives out.
+*.rar
+*.7z
+*.zip
+*.exe
+*.msi
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# Working materials (design sources, docs, raw screenshots)
+page/

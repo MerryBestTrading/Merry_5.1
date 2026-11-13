@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>v5.1 Usage — Merry System</title>
+  <meta name="description" content="Step-by-step guide to installing and using Merry 5.1: download, unzip, install, start, choose a token, and ask Merry.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">M</span>
+        <span class="brand-name">MERRY<small>AI Trading Systems</small></span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">About us</a>
+        <a href="testimonials.html">Client Feedback</a>
+        <a href="system.html">Merry System</a>
+        <a href="guide.html" class="active">v5.1 Usage</a>
+      </nav>
+      <a class="btn btn-primary header-cta" href="https://github.com/MerryBestTrading/Merry_5.1/releases/download/v5.1/Merry_5.1.rar">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download v5.1
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <p class="eyebrow">v5.1 Usage</p>
+          <h1>From download to first analysis in minutes.</h1>
+          <p class="lead">A simple, click-by-click setup for beginners. No coding, no terminal commands — just the files in the package and two double-clicks.</p>
+          <div class="actions">
+            <a class="btn btn-primary btn-large" href="https://github.com/MerryBestTrading/Merry_5.1/releases/download/v5.1/Merry_5.1.rar">Download Merry 5.1</a>
+            <a class="btn btn-ghost btn-large" href="system.html">What is Merry 5.1?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 24px;">
+      <div class="container">
+        <div class="download-strip">
+          <div>
+            <strong>Merry_5.1.rar</strong>
+            <span>1.47 GB · Version 5.1 · Windows and macOS</span>
+          </div>
+          <a class="btn btn-primary" href="https://github.com/MerryBestTrading/Merry_5.1/releases/download/v5.1/Merry_5.1.rar">Download the archive</a>
+        </div>
+
+        <div class="guide-step">
+          <div class="guide-text">
+            <p class="step-label">Step 1 — Download</p>
+            <h3>Get the archive</h3>
+            <p>Download <code>Merry_5.1.rar</code> from the button above. It is 1.47 GB, so give it a few minutes on a slower connection.</p>
+            <p>Save it anywhere you can easily find — for example, your Downloads folder.</p>
+          </div>
+          <div class="guide-visual">
+            <img src="assets/usage/04.png" alt="The Merry 5.1 interface" loading="lazy">
+          </div>
+        </div>
+
+        <div class="guide-step">
+          <div class="guide-text">
+            <p class="step-label">Step 2 — Unzip</p>
+            <h3>Extract the package</h3>
+            <p>Right-click the RAR file and choose <strong>Extract All</strong> (Windows), or double-click it (macOS).</p>
+            <p>Keep the folder structure intact. You will see files including <code>install.bat</code>, <code>start.bat</code>, and <code>stop.bat</code> — or the <code>.command</code> versions on macOS.</p>
+          </div>
+          <div class="guide-visual">
+            <img src="assets/usage/01.png" alt="The extracted Merry 5.1 folder with install.bat and start.bat" loading="lazy">
+          </div>
+        </div>
+
+        <div class="guide-step">
+          <div class="guide-text">
+            <p class="step-label">Step 3 — Install</p>
+            <h3>Run the installer</h3>
+            <p>Double-click <code>install.bat</code> on Windows, or <code>install.command</code> on macOS.</p>
+            <p>A console window opens. It creates a virtual environment inside the package folder, installs the dependencies, and verifies the model checksum. Wait for the line:</p>
+            <p><strong>“Install complete.”</strong></p>
+            <p class="fineprint">This can take a few minutes. If you see a harmless path warning before it starts, let it continue until “Install complete” appears.</p>
+          </div>
+          <div class="guide-visual">
+            <img src="assets/usage/02.png" alt="The Merry 5.1 installer completing and verifying the model" loading="lazy">
+          </div>
+        </div>
+
+        <div class="guide-step">
+          <div class="guide-text">
+            <p class="step-label">Step 4 — Start</p>
+            <h3>Launch the system</h3>
+            <p>Double-click <code>start.bat</code> (Windows) or <code>start.command</code> (macOS).</p>
+            <p>The console starts the local model server and the web app, then shows:</p>
+            <p><code>Merry_5.1 is ready: http://127.0.0.1:8787</code></p>
+            <p class="fineprint">Keep this window open or minimized. It is the engine running on your computer.</p>
+          </div>
+          <div class="guide-visual">
+            <img src="assets/usage/03.png" alt="The Merry 5.1 console showing the local server ready on port 8787" loading="lazy">
+          </div>
+        </div>
+
+        <div class="guide-step">
+          <div class="guide-text">
+            <p class="step-label">Step 5 — Choose a market</p>
+            <h3>Open the UI and load a chart</h3>
+            <p>Your browser opens automatically. If it does not, go to <code>http://127.0.0.1:8787</code>.</p>
+            <p>Merry automatically loads the token list from Binance — currently 522 USDT-M perpetual markets. Search for a token, select it, and download its candles.</p>
+            <p>Wait for the download to finish. Merry then has enough historical data to analyze the chart.</p>
+          </div>
+          <div class="guide-visual">
+            <img src="assets/usage/04.png" alt="The Merry 5.1 market list and chart interface" loading="lazy">
+          </div>
+        </div>
+
+        <div class="guide-step">
+          <div class="guide-text">
+            <p class="step-label">Step 6 — Ask Merry</p>
+            <h3>Four questions, one clear answer</h3>
+            <p>Merry Assistant is ready on the right. Use one of the four guided questions, or type your own into the chat box.</p>
+            <p>The assistant answers with structure, bias, entry, stop loss, take profit, risk-to-reward, and the levels that would invalidate the idea — or tells you there is no valid setup.</p>
+          </div>
+          <div class="guide-visual">
+            <div class="assistant-grid">
+              <figure>
+                <img src="assets/usage/05.png" alt="Analyze the situation button in Merry 5.1" loading="lazy">
+                <figcaption>Analyze the situation</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/usage/06.png" alt="TP and SL question in Merry 5.1" loading="lazy">
+                <figcaption>TP &amp; SL if I enter now</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/usage/07.png" alt="Should I enter now question in Merry 5.1" loading="lazy">
+                <figcaption>Should I enter now?</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/usage/08.png" alt="Best entry price question in Merry 5.1" loading="lazy">
+                <figcaption>Best entry price</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-card mt-32">
+          <strong>To stop everything:</strong> run <code>stop.bat</code> (Windows) or <code>stop.command</code> (macOS). It forcibly terminates the system and frees the ports. Merry 5.1 provides analysis only; it does not place trades for you.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Before you start</p>
+          <h2>What you need.</h2>
+        </div>
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="icon">01</div>
+            <h3>Windows or macOS</h3>
+            <p>Use the <code>.bat</code> files on Windows and the <code>.command</code> files on macOS. Keep the extracted folder in a place you can find.</p>
+          </article>
+          <article class="card">
+            <div class="icon">02</div>
+            <h3>Disk space and internet</h3>
+            <p>The package is 1.47 GB and includes a 1.12 GB model. Make sure you have room to extract it, and an internet connection for Binance data.</p>
+          </article>
+          <article class="card">
+            <div class="icon">03</div>
+            <h3>No account, no cloud</h3>
+            <p>The interface runs locally at <code>127.0.0.1</code>. There is no sign-up and no cloud dashboard to configure.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Common questions.</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Does Merry 5.1 trade automatically?</summary>
+            <p>No. Merry 5.1 provides AI-powered chart analysis and trading signals. You place every trade yourself. Merry 5.2 adds automated execution for select clients.</p>
+          </details>
+          <details>
+            <summary>How long does installation take?</summary>
+            <p>A few minutes, depending on your computer and internet connection. The installer creates the environment, installs the Python dependencies, and verifies the model checksum. Wait for “Install complete.”</p>
+          </details>
+          <details>
+            <summary>How many markets are available?</summary>
+            <p>The UI loads the token list from Binance automatically. At the time of release, it shows 522 USDT-M perpetual markets.</p>
+          </details>
+          <details>
+            <summary>What do the four buttons do?</summary>
+            <p>They ask the assistant to analyze the current situation, plan take-profit and stop-loss levels, decide whether the setup is valid now, or find the best entry price. You can also type any question into the chat.</p>
+          </details>
+          <details>
+            <summary>What if the console shows a path warning?</summary>
+            <p>A harmless warning can appear at the start of installation. As long as the process continues and ends with “Install complete,” the environment is ready.</p>
+          </details>
+          <details>
+            <summary>How do I shut it down?</summary>
+            <p>Run <code>stop.bat</code> on Windows or <code>stop.command</code> on macOS. It forcibly terminates the model server and the web app.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow">Ready?</p>
+          <h2>Download Merry 5.1 and follow the six steps.</h2>
+          <p>1.47 GB · Free public edition · Windows and macOS</p>
+        </div>
+        <a class="btn btn-primary btn-large" href="https://github.com/MerryBestTrading/Merry_5.1/releases/download/v5.1/Merry_5.1.rar">Download Merry 5.1</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">M</span>
+          <span class="brand-name">MERRY<small>AI Trading Systems</small></span>
+        </a>
+        <p class="fineprint mt-16">© 2026 Merry. All rights reserved.</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html">About us</a>
+        <a href="testimonials.html">Client Feedback</a>
+        <a href="system.html">Merry System</a>
+        <a href="guide.html">v5.1 Usage</a>
+        <a href="download.html">Download details</a>
+      </nav>
+    </div>
+    <div class="container">
+      <p class="risk">Risk notice: Trading cryptocurrencies involves substantial risk and can result in the loss of all your capital. Past performance does not guarantee future results. Nothing on this site is financial, investment, or legal advice. Only trade with money you can afford to lose.</p>
+    </div>
+  </footer>
+</body>
+</html>
